@@ -89,8 +89,15 @@
   - Week5
       - Continue to add move control movement function on the car
       - Add Assets to project
-  - Week6
-  
+  - Week6 5/12/2024
+      - Add if statements and tags so that if we drive over a package that is tagged as customer. The statements print to the console package picked up or package 
+        delivered.
+      - Use bool function to make sure can only delivery a package if you actually have the package and verify cannot delivery a package over and over.
+      - Add destroy function,  when picking up a package, the package disappears. Adding restriction condition allow to pick up one package each time.
+    Lessons Learned:
+      - Learning layer override priority function, put things in different layers when adding assets in game layout design.
+      - How to disappears things by using destory funcition
+      - Add tag to print interaction statements on the console.
   - Week7
     
   - Week8
