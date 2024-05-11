@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Delivery : MonoBehaviour
 {
+    [SerializeField] float destroyDelay = 0.5f;
+    bool hasPackage;
     public void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log("Watch out!");
@@ -12,15 +14,17 @@ public class Delivery : MonoBehaviour
     
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("What was that?!");    
-        if (other.tag == "Package")
+        if (other.tag == "Package" && hasPackage == false)
         {
             Debug.Log("Package picked up");
+            hasPackage = true;
+            Destroy(other.gameObject, destroyDelay);
         }
 
-        if (other.tag == "Customer")
+        if (other.tag == "Customer" && hasPackage)
         {
             Debug.Log("Package Delivered");
+            hasPackage = false;
         }
 
     }
