@@ -98,10 +98,17 @@
       - Learning layer override priority function, put things in different layers when adding assets in game layout design.
       - How to disappears things by using destroy function
       - Add tag to print interaction statements on the console.
-  - Week7
-    
-  - Week8
-    
+  - Week7 5/19/2024
+      - Add destroy delay function. After car pick package up take a few second delay for disappears package.
+      - Adding GetComponents function. When a car drive over a package which will change car's color which is same as package. When a car deliverd a package, car's color 
+        goes back to original color.
+    - Lessons Learned:
+      - Destroy(gameObject, destroyDelay), using this function to remove the game object in destroy Delay time after loading the object.
+      - myResults = GetComponent<ComponentType>(). 
+  - Week8 5/26/2024
+      - Add car movement function, implement car movement can speed up or slow down when a car triggers a boost object.
+      - Using OntriggerEnter2D and OnCollisionEnter2D functions to speed up or slow down.
+      - Add Tag for a object, when a car triggers the object will speed up.      
   - Week9
     
   - Week10
