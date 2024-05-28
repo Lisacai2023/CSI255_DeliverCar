@@ -5,7 +5,10 @@ using UnityEngine;
 public class car : MonoBehaviour
 {
     [SerializeField]float steerSpeed = 1f;
-    [SerializeField]float moveSpeed = 0.01f;
+    [SerializeField]float moveSpeed = 20f;
+    [SerializeField]float slowSpeed = 15f;   
+    [SerializeField]float boostSpeed = 30f;
+
     void Start()
     {
 
@@ -21,4 +24,25 @@ public class car : MonoBehaviour
         transform.Translate(0,moveAmout,0);
         
     }
+
+    void OnCollisionEnter2D(Collision2D other) 
+    {
+        moveSpeed = slowSpeed;    
+    }
+
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Boost")
+        {
+            Debug.Log(" You are boosting!");
+            moveSpeed = boostSpeed;
+        }
+    }
+
+
+
+
+
+
 }
