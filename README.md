@@ -109,8 +109,9 @@
       - Add car movement function, implement car movement can speed up or slow down when a car triggers a boost object.
       - Using OntriggerEnter2D and OnCollisionEnter2D functions to speed up or slow down.
       - Add Tag for a object, when a car triggers the object will speed up.      
-  - Week9
-    
+  - Week9 06/02/2024
+      - Add audio effects into game. Using GetComponents function, when pick up a package have sound effects.
+      - Improve game design layout, and add more packages.
   - Week10
   
   - Week11: Demonstration
