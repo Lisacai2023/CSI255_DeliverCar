@@ -5225,7 +5225,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   destroyDelay: 0.5
-  Crash: {fileID: 0}
+  Crash: {fileID: 6787202}
   Finish: {fileID: 6787202}
 --- !u!114 &854582179
 MonoBehaviour:
@@ -5261,7 +5261,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b71ce8f14699ac44e914948bd8f2c239, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6a53531be5bb01741b71167414c12a17, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
