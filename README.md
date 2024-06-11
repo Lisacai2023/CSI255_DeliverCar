@@ -113,7 +113,8 @@
       - Add audio effects into game. Using GetComponents function, when pick up a package have sound effects.
       - Improve game design layout, and add more packages.
   - Week10
-  
+      - Add main menu with play and exit buttion.
+      - Add sound effect when delivering a package.
   - Week11: Demonstration
 
 ## Future Work:
