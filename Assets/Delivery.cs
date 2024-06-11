@@ -10,15 +10,18 @@ public class Delivery : MonoBehaviour
     [SerializeField] float destroyDelay = 0.5f;
     bool hasPackage;
     SpriteRenderer spriteRenderer;
-    AudioSource audioSource;
+    public AudioSource Crash;
+    public AudioSource Finish;
+
+
     public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
-            Debug.LogError("AudioSource component missing from this GameObject. Please add one.");
-        }
+
+
+        Crash = gameObject.GetComponent<AudioSource>();
+        Finish = gameObject.GetComponent<AudioSource>();
+
 
     }
     public void OnCollisionEnter2D(Collision2D other)
@@ -35,7 +38,7 @@ public class Delivery : MonoBehaviour
             hasPackage = true;
             spriteRenderer.color = hasPackageColor;
             //SoundManagerScript.PlaySound("Crash");
-            audioSource.Play();
+            Crash.Play();
             Destroy(other.gameObject, destroyDelay);
         }
 
@@ -44,7 +47,9 @@ public class Delivery : MonoBehaviour
             Debug.Log("Package Delivered");
             hasPackage = false;
             spriteRenderer.color = noPackageColor;
-            SoundManagerScript.PlaySound("Finish"); 
+            SoundManagerScript.PlaySound("Finish");
+            Finish.Play();
+ 
         }
 
     }
