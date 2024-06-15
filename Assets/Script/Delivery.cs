@@ -34,6 +34,7 @@ public class Delivery : MonoBehaviour
     {
         if (other.tag == "Package" && hasPackage == false)
         {
+            ScoreScript.ScoreValue += 10;
             Debug.Log("Package picked up");
             hasPackage = true;
             spriteRenderer.color = hasPackageColor;
