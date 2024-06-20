@@ -116,12 +116,15 @@
       - Add main menu with play and exit buttion.
       - Add sound effect when delivering a package.
   - Week11: Demonstration
+      - Final presetation
 
 ## Future Work:
 - Discuss potential new features or improvements for future versions.
-    - What are features that you would like to implement, but are beyond the 3-month mark?
+    - Improve scene and camera setting
+    - Add next level scene
+    - Design new playing idea to add persistent data.
 - Address any originally planned features not implemented and reasons behind it.
-    - Update in the future
+    - Sound effect. I want to implement two different sound effects but only one is worked. The reasons is the SoundManager Script coding defict.
 
 
 
